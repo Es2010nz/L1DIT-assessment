@@ -1,8 +1,6 @@
 #List of the chooseable activeties
 #Activtys can be changed here
-activity_list = [("Cultural immersion",5,"easy    ",800),("Kayaking & pancakes",3,"moderate" ,400),("Mountain biking",4,"difficult", 900)]
-print ("Cultural immersion',5,'easy    ',800")
-print ("Kayaking & pancakes',3,'moderate' ,400")
-print ("Mountain biking',4,'difficult', 900")
-#pick a number
-number_list = 1,2,3
+activity_list = [("1","Cultural immersion",5,"easy ",800), ("2","Kayaking & pancakes",3,"moderate" ,400),("3","Mountain biking",4,"difficult", 900)]
+print("  num   act                days  dif    cost")
+print(f"{activity_list}")
+
