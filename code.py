@@ -13,7 +13,12 @@ print(f"{activity_list}")
 print(f"{activity_list1}")
 print(f"{activity_list2}")
 input("what is your name? ")
-input("what is your age")
+camper_age =""
+while camper_age == "" or camper_age.isdigit() == False :
+    camper_age = input("what is your age? ")
+    if camper_age  == ""or camper_age.isdigit() == False: print("you need to enter your age")
+if int(camper_age) > 4 and int(camper_age) < 18: print(f"{camper_age} you are the right age to go to camp")  
+if int(camper_age) < 4 and int(camper_age) > 18: print(f"{camper_age} You are the wrong age to go to camp")  
 input("what camp do you want to go to 1,2,3")
 input("what meals do you want standard, vegeterian of vegan")
 input("do you need the shuttle bus - extra $80")
