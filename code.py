@@ -1,13 +1,19 @@
 #List of the chooseable activeties
+# for age 
 age_min = 5
 age_max = 17
 camp_leader_age = 15
+#for camp number and cost
+camp_number_min = 1
+camp_number_med = 2
+camp_number_max = 3
 #Activtys can be changed here
 name_input = ""
 age_input = ""
 camp_input =""
 meal_input =""
 shuttle_input =""
+#table for camp options
 activity_list = [("1","Cultural immersion",5,"easy ",800)]
 activity_list1 = [("2","Kayaking & pancakes",3,"moderate" ,400)]
 activity_list2 = [("3","Mountain biking",4,"difficult", 900)]
@@ -28,5 +34,7 @@ if int(camper_age) > age_max: print(f"{camper_age} you are to old to go to camp"
 # if old enough It can tell you that the person is qulifyed to be camp leader
 if int(camper_age) > camp_leader_age and int(camper_age) < age_max: print(f"{camper_age} you are qulifyed to be a camp leader")
 input("what camp do you want to go to 1,2,3")
+if int(activity_list) > camp_number_min: print(f"{activity_list} camp costs $800") 
+if int(activity_list1) > camp_number_med: print(f"{activity_list1} camp costs $400") 
 input("what meals do you want standard, vegeterian of vegan")
 input("do you need the shuttle bus - extra $80")
