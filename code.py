@@ -33,8 +33,10 @@ if int(camper_age) < age_min: print(f"{camper_age} you are to young to go to cam
 if int(camper_age) > age_max: print(f"{camper_age} you are to old to go to camp")  
 # if old enough It can tell you that the person is qulifyed to be camp leader
 if int(camper_age) > camp_leader_age and int(camper_age) < age_max: print(f"{camper_age} you are qulifyed to be a camp leader")
-input("what camp do you want to go to 1,2,3")
-if int(activity_list) > camp_number_min: print(f"{activity_list} camp costs $800") 
-if int(activity_list1) > camp_number_med: print(f"{activity_list1} camp costs $400") 
+camp_number = input("what camp do you want to go to 1,2,3")
+camp_number = 1,2,3
+if int(camp_number) > 1: print(f"{1} camp costs $800") 
+if int(camp_number) > 2: print(f"{2} camp costs $400") 
+if int(camp_number) > 3: print(f"{3} camp costs $900") 
 input("what meals do you want standard, vegeterian of vegan")
 input("do you need the shuttle bus - extra $80")
