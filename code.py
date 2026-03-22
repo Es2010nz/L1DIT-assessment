@@ -13,6 +13,10 @@ age_input = ""
 camp_input =""
 meal_input =""
 shuttle_input =""
+#Camp costs
+price1_number = 800
+price2_number = 400
+price3_number = 900
 #table for camp options
 activity_list = [("1","Cultural immersion",5,"easy ",800)]
 activity_list1 = [("2","Kayaking & pancakes",3,"moderate" ,400)]
@@ -33,10 +37,19 @@ if int(camper_age) < age_min: print(f"{camper_age} you are to young to go to cam
 if int(camper_age) > age_max: print(f"{camper_age} you are to old to go to camp")  
 # if old enough It can tell you that the person is qulifyed to be camp leader
 if int(camper_age) > camp_leader_age and int(camper_age) < age_max: print(f"{camper_age} you are qulifyed to be a camp leader")
-activity_number = input("what camp do you want to go to 1,2,3")
-camp_number = 1,2,3
-if(camp_number) >1: print(f"{1} camp costs $800") 
-elif(camp_number) >2: print(f"{2} camp costs $400") 
-if(camp_number) >3: print(f"{3} camp costs $900") 
+activity_number = int(input("Which camp do you want to go to? (1, 2, or 3): "))
+#what camp is chosen.
+if activity_number == 1:
+    print("Camp 1 costs $800")
+elif activity_number == 2:
+    print("Camp 2 costs $400")
+elif activity_number == 3:
+    print("Camp 3 costs $900")
+else:
+    print("Invalid choice. Please enter 1, 2, or 3.")
+
+input("do you need the shuttle bus - extra $80") 
+if shuttle_input == "yes":added_number = price1_number + 80
+elif shuttle_input == "yes":added_number = price2_number + 80
+elif shuttle_input == "yes":added_number = price3_number + 80
 input("what meals do you want standard, vegeterian of vegan")
-input("do you need the shuttle bus - extra $80")
