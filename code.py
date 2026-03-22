@@ -39,17 +39,20 @@ if int(camper_age) > age_max: print(f"{camper_age} you are to old to go to camp"
 if int(camper_age) > camp_leader_age and int(camper_age) < age_max: print(f"{camper_age} you are qulifyed to be a camp leader")
 activity_number = int(input("Which camp do you want to go to? (1, 2, or 3): "))
 #what camp is chosen.
-if activity_number == 1:
+if 800 == 1:
     print("Camp 1 costs $800")
-elif activity_number == 2:
+elif 400 == 2:
     print("Camp 2 costs $400")
-elif activity_number == 3:
+elif 900 == 3:
     print("Camp 3 costs $900")
 else:
     print("Invalid choice. Please enter 1, 2, or 3.")
 
 input("do you need the shuttle bus - extra $80") 
-if shuttle_input == "yes":added_number = price1_number + 80
-elif shuttle_input == "yes":added_number = price2_number + 80
-elif shuttle_input == "yes":added_number = price3_number + 80
+if shuttle_input == "yes":
+    added_number = 800 + 80
+elif shuttle_input == "yes":
+    added_number = 400 + 80
+elif shuttle_input == "yes":
+    added_number = 900 + 80
 input("what meals do you want standard, vegeterian of vegan")
