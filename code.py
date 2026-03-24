@@ -56,5 +56,5 @@ else:
     added_number = 0   
 
 print("Total:", added_number)
-
-if camp_number_min = 1: print (f"hello you are {age_input} the camp lasts 5 days, 
+ 
+if camp_number_min == 1: print (f"hello you are {age_input} the camp lasts 5 days, doing Cultural immersion which is easy you chose {meal_input}")
