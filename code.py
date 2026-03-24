@@ -52,7 +52,7 @@ elif shuttle_input == "2":
     added_number = 400 + 80
 elif shuttle_input == "3":
     added_number = 900 + 80
-elif:
+else:
     added_number = 0   
 
 print("Total:", added_number)
