@@ -96,8 +96,9 @@ else:
 print(f"\nThank you, {name_input}! You are {camper_age} years old and you chose Camp {activity_number}.")
 print(f"You selected a {meal_input} meal plan and your shuttle option was '{shuttle}'.")
 print(f"Your total cost for camp is ${added_number}.")
-print(is this correct)
+print("is this correct.")
+
 if end_input == "yes":
-    print(f"enjoy the camp.")
+ print(f"enjoy the camp.")
 else:
  print(f"have a good day")
