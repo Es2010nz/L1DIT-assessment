@@ -27,11 +27,10 @@ while True:
 
     #store the name
     name_input =""
-    while name_input == "" or name_input.isalpha(): == False:
+    while name_input == "" or name_input.isalpha() == False:
         name_input = input("what is your name? ")
         if name_input  == "" or name_input.isalpha() == False:
-            print("you need to enter your name")
-
+            print("you need to enter your name no numbers or symbols")
     camper_age =""
     while camper_age == "" or camper_age.isdigit() == False :
         camper_age = input("what is your age? ")
