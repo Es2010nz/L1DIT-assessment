@@ -36,7 +36,6 @@ while True:
         camper_age = input("what is your age? ")
         if camper_age  == "" or camper_age.isdigit() == False:
             print("you need to enter your age")
-
     # says that you're the right age
     if int(camper_age) > age_min and int(camper_age) < age_max:
         print(f"{camper_age} you are the right age to go to camp")
@@ -64,6 +63,7 @@ while True:
     elif activity_number == 3:
         print("Camp 3 costs $900")
         base_cost = 900
+   
     else:
         print("Invalid choice. Please enter 1, 2, or 3.")
 
